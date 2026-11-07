@@ -1,3 +1,0 @@
-probe1: localtime_r(&t, &amp;lt);
-probe2: a &amp;&amp; b
-probe3: x &lt; y

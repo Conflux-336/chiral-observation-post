@@ -1290,7 +1290,7 @@ void loop() {
     if (gTimeOk) {
       const time_t t = time(nullptr);
       struct tm lt;
-      localtime_r(&t, <);
+      localtime_r(&t, &lt);
       snprintf(clock, sizeof(clock), "%02d:%02d:%02d", lt.tm_hour, lt.tm_min, lt.tm_sec);
     }
 

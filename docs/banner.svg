@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420">
+  <defs>
+    <linearGradient id="contourFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e3a40" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e3a40" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="420" fill="#04090d"/>
+
+  <!-- 等高线：底部一组平滑曲线 -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-20 330 C 180 250, 340 390, 560 320 S 940 250, 1300 340" stroke="#123a42" stroke-width="2" opacity="0.9"/>
+    <path d="M-20 355 C 200 290, 380 410, 600 350 S 980 290, 1300 365" stroke="#16474f" stroke-width="2" opacity="0.8"/>
+    <path d="M-20 380 C 220 330, 420 430, 640 380 S 1000 330, 1300 392" stroke="#1b565e" stroke-width="2" opacity="0.7"/>
+    <path d="M-20 402 C 240 365, 460 445, 680 405 S 1020 365, 1300 415" stroke="#22666e" stroke-width="2" opacity="0.55"/>
+    <path d="M-20 300 C 160 235, 320 350, 540 290 S 920 225, 1300 310" stroke="#0e2f36" stroke-width="2" opacity="0.9"/>
+  </g>
+
+  <!-- 开罗尔扫描环：右上，三环 -->
+  <g fill="none" transform="translate(1080,120)">
+    <circle r="26" stroke="#7ae8e0" stroke-width="2" opacity="0.9"/>
+    <circle r="52" stroke="#3cbeb8" stroke-width="2" opacity="0.55" stroke-dasharray="6 5"/>
+    <circle r="80" stroke="#1d6a70" stroke-width="2" opacity="0.4" stroke-dasharray="3 6"/>
+    <circle r="3.5" fill="#ede3cd"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="72" y="188" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei',sans-serif"
+        font-size="86" font-weight="700" fill="#ede3cd" letter-spacing="6">开罗尔观测站</text>
+
+  <text x="76" y="248" font-family="'SF Mono',Menlo,Consolas,monospace"
+        font-size="30" fill="#7ae8e0" letter-spacing="10">CHIRAL OBSERVATION POST</text>
+
+  <text x="76" y="300" font-family="'SF Mono',Menlo,Consolas,monospace"
+        font-size="19" fill="#5a8d94" letter-spacing="2">ESP32-S3 · ST7789 170×320 · TFT_eSPI · OPEN-METEO · NTP · v1.3</text>
+
+  <!-- 左下小字 -->
+  <text x="76" y="392" font-family="'SF Mono',Menlo,Consolas,monospace"
+        font-size="15" fill="#33565e" letter-spacing="3">A DEATH STRANDING-INSPIRED ODRADEK HUD</text>
+</svg>
